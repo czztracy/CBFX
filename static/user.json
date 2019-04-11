@@ -1,0 +1,35 @@
+{
+  "res": [
+    {
+      "username": "leader",
+      "password": 123456,
+      "avatarCode": "0005"
+    },
+    {
+      "username": "micro",
+      "password": 123456,
+      "avatarCode": "0001"
+    },
+    {
+      "username": "manager",
+      "password": 123456,
+      "avatarCode": "0003"
+    },
+    {
+      "username": "supplier",
+      "password": 123456,
+      "avatarCode": "0006"
+    },
+    {
+      "username": "Finance",
+      "password": 123456,
+      "avatarCode": "0007"
+    }
+  ],
+  "data": {
+    "token": "admin"
+  },
+  "status": 200,
+  "token": true,
+  "success": true
+}

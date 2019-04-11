@@ -1,0 +1,114 @@
+.suppliers {
+    background: #fff;
+    position: relative;
+    width: auto;
+    float: left;
+    /* 匹配历史报价单顶部 */
+    .matching {
+      overflow: hidden;
+      margin-bottom: 17px;
+      .UpDown {
+        float: right;
+        .el-button {
+          vertical-align: top;
+          font-size: 16px;
+          border: 1px solid #4a90e2;
+          color: #4a90e2;
+          &:nth-child(1) {
+            margin-right: 14px;
+          }
+        }
+      }
+      .Phistory {
+        float: left;
+      }
+      .el-form-item__label {
+        font-weight: 500;
+      }
+      .el-input--suffix .el-input__inner {
+        background: #f9f9f9;
+      }
+      .el-form--inline .el-form-item {
+        margin-bottom: 0;
+      }
+      .el-input span.pic {
+        border-left: 1px solid #cecece;
+        display: inline-block;
+        height: 60%;
+        width: 32px;
+        margin-top: 24%;
+        .img {
+          font-size: 18px;
+          vertical-align: top;
+          margin-top: 4px;
+          cursor: pointer;
+        }
+      }
+    }
+    /* 报价单 */
+    .priceSheet {
+      min-height: calc(100vh - 173px) !important;
+      // 修改插件的提示logo的大小
+      svg {
+        width: 13px !important;
+      }
+      .tablecom{
+        &>div{
+          float: none !important;
+        }
+      }
+      .maskcon{
+        // overflow: scroll;
+        &>div{
+          float: none !important;
+        }
+      }
+    }
+    /* 保存提交 */
+    .CommitCharge {
+      padding-top: 30px;
+      text-align: center;
+      .el-button {
+        padding: 12px 5.8%;
+        font-size: 18px;
+        margin-top: 40px;
+        &:nth-child(1) {
+          color: #1875f0;
+          border-color: #1875f0;
+          margin-right: 10px;
+        }
+        &:nth-child(2) {
+          border-color: #d1d1d1;
+        }
+      }
+    }
+    .menuss {
+      width: 125px;
+      float: left;
+      position: absolute;
+      z-index: 999999;
+      background-color: #fff;
+      .menuContent {
+        border: 1px solid;
+      }
+      .huise {
+        color: #999;
+        cursor: not-allowed;
+      }
+      p {
+        cursor: pointer;
+        border-bottom: 1px solid;
+        margin: 0 0;
+        &:last-child {
+          border-bottom: 0;
+        }
+      }
+    }
+    .set {
+      border: 1px solid #4a90e2;
+      color: #4a90e2;
+    }
+    .controlwh {
+      z-index: 1000000 !important;
+    }
+  }

@@ -1,0 +1,486 @@
+.box {
+    background: rgba(244, 244, 244, 1);
+    padding: 18px;
+    min-height: calc(100vh - 153px);
+  }
+  .box .topChuck {
+    padding: 34px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid #cecece;
+    border-radius: 4px;
+  }
+  .box .topChuck .datePosition {
+    position: absolute;
+    right: 32px;
+    top: 0;
+  }
+  .box .topChuck .line {
+    width: 1px;
+    height: 22px;
+    background-color: #cecece;
+    margin-top: 10px;
+  }
+  /* 收缩按钮 */
+  .controlBox {
+    overflow: hidden;
+    background: rgba(244, 244, 244, 1);
+    position: relative;
+  }
+  .controlBtn span {
+    display: inline-block;
+    height: 16px;
+    color: #666666;
+    position: absolute;
+    left: 50%;
+    padding: 0 15px;
+    margin-left: -20px;
+    top: -1px;
+    cursor: pointer;
+  }
+  .controlBtn {
+    width: 3.15%;
+    height: 16px;
+    margin: 0 auto;
+    display: block;
+    background: rgba(255, 255, 255, 1);
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0 0 5px 5px;
+    border: 1px solid #cecece;
+    border-top: 0;
+  }
+  .upper {
+    transform: rotate(180deg);
+    transition: all 0.3s ease;
+  }
+  .downer {
+    transform: rotate(360deg);
+    transition: all 0.3s ease;
+  }
+  .downer .fa{
+    margin-right: 0
+  }
+  /* 表格部分 */
+  
+  /* 物料号 需求号 */
+  .listBox {
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid #d1d1d1;
+    margin-top: 3px;
+  }
+  .listBox .chuck {
+    padding: 12px 15px;
+    margin: 0 4px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #cecece;
+    overflow: hidden;
+  }
+  .listBox .chuck .left {
+    float: left;
+    border-right: 1px solid #d1d1d1;
+    padding-right: 20px;
+    width: 50%;
+  }
+  .listBox .chuck .left .top,
+  .text {
+    width: 100%;
+    font-size: 24px;
+    font-family: PingFangSC-Regular;
+    font-weight: 400;
+    color: rgba(34, 34, 34, 1);
+    line-height: 28px;
+  }
+  .listBox .chuck .left .text {
+    padding-left: 10px;
+  }
+  .listBox .chuck .left .top p {
+    font-size: 14px;
+    font-family: MicrosoftYaHei;
+    color: rgba(51, 51, 51, 1);
+    line-height: 19px;
+    float: right;
+  }
+  .listBox .chuck .left .top .Box {
+    text-align: center;
+    overflow: hidden;
+  }
+  .listBox .chuck .left .top .Box .per {
+    margin-top: 10px;
+    /* width: 38%; */
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  .listBox .chuck .left .top .Box .per1 {
+    margin-top: 40px;
+    width: 20%;
+    display: inline-block;
+  }
+  .listBox .chuck .left .top .Box .per1 .TEXT {
+    font-size: 16px;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .listBox .chuck .left .top .Box .per .TEXT {
+    font-size: 16px;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .listBox .chuck .left .top .Box .per .pro1 {
+    width: 100%;
+    height: 14px;
+    background: rgba(5, 205, 0, 1);
+    border-radius: 3px;
+  }
+  .listBox .chuck .left .top .Box .per .pro2 {
+    width: 100%;
+    height: 14px;
+    background: rgba(0, 124, 255, 1);
+    border-radius: 3px;
+  }
+  .listBox .chuck .left .top .Box .per1 .pro3 {
+    width: 100%;
+    height: 14px;
+    background: rgba(255, 158, 0, 1);
+    border-radius: 3px;
+  }
+  
+  .listBox .chuck .right {
+    float: left;
+    padding-left: 20px;
+    width: 50%;
+  }
+  .listBox .chuck .right .top,
+  .text {
+    width: 100%;
+    font-size: 24px;
+    font-family: PingFangSC-Regular;
+    font-weight: 400;
+    color: rgba(34, 34, 34, 1);
+    line-height: 28px;
+  }
+  .listBox .chuck .right .text {
+    padding-left: 10px;
+  }
+  .listBox .chuck .right .top p {
+    font-size: 14px;
+    font-family: MicrosoftYaHei;
+    color: rgba(51, 51, 51, 1);
+    line-height: 19px;
+    float: right;
+  }
+  .listBox .chuck .right .top .Box {
+    text-align: center;
+    overflow: hidden;
+  }
+  .listBox .chuck .right .top .Box .per {
+    margin-top: 10px;
+    /* width: 38%; */
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .listBox .chuck .right .top .Box .per1 {
+    margin-top: 40px;
+    width: 20%;
+    display: inline-block;
+  }
+  .listBox .chuck .right .top .Box .per1 .TEXT {
+    font-size: 16px;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .listBox .chuck .right .top .Box .per .TEXT {
+    font-size: 16px;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .listBox .chuck .right .top .Box .per .pro1 {
+    width: 100%;
+    height: 14px;
+    background: rgba(5, 205, 0, 1);
+    border-radius: 3px;
+  }
+  .listBox .chuck .right .top .Box .per .pro2 {
+    width: 100%;
+    height: 14px;
+    background: rgba(0, 124, 255, 1);
+    border-radius: 3px;
+  }
+  .listBox .chuck .right .top .Box .per1 .pro3 {
+    width: 100%;
+    height: 14px;
+    background: rgba(255, 158, 0, 1);
+    border-radius: 3px;
+  }
+  
+  /* 滑块 */
+  .box .listBox .Btn {
+    overflow: hidden;
+    color: #4a90e2;
+    margin-bottom: 10px;
+    position: relative;
+    padding: 16px 15px;
+    padding-bottom: 0;
+  }
+  .box .listBox .Btn .total {
+    display: inline-block;
+    position: absolute;
+    right: 50px;
+    height: 40px;
+    line-height: 20px;
+    padding: 10px;
+    color: #4a4a4a;
+    font-size: 14px;
+  }
+  .box .listBox .Btn .total span {
+    color: #4a90e2;
+    padding: 0 4px;
+  }
+  .box .listBox .Btn .Curr {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    height: 40px;
+    line-height: 20px;
+    padding: 10px;
+    color: #4a4a4a;
+    font-size: 14px;
+  }
+  .box .listBox .Btn .Curr span {
+    color: #4a90e2;
+    padding: 0 2px;
+  }
+  .box .listBox .block {
+    margin: 0 15px;
+    width: 1222px;
+  }
+  /* 列表 */
+  .box .listBox .LIST {
+    padding: 0 15px;
+  }
+  /* 分页 */
+  .box .listBox .PA {
+    padding: 34px;
+    padding-top: 0;
+  }
+  
+  .demandCODE {
+    color: #409eff;
+  }
+  .demandCODE:hover {
+    cursor: pointer;
+  }
+  .offerMan .el-date-editor .el-range__icon {
+    color: #606266;
+  }
+  /* 表格超出隐藏 */
+  .LIST .el-table .cell {
+    white-space: nowrap;
+  }
+  .box .topChuck label {
+    font-weight: normal;
+  }
+  .box .topChuck .el-form--inline .el-form-item {
+    width: 18%;
+  }
+  .box .topChuck .el-form--inline .el-form-item__label {
+    width: 30%;
+    line-height: 20px;
+  }
+  .box .topChuck .el-form-item.offerMan label {
+    position: relative;
+    top: 50%;
+    margin-top: 8px;
+    /* text-align: left; */
+  }
+  .box .topChuck .el-form-item.sun1{
+    margin-bottom:0
+  }
+  .box .topChuck .sun2 {
+      margin-top: 0 !important;
+  }
+  /* 下拉框中的样式 */
+  .offerMan .el-tag--small {
+    padding: 0px 3px 0px 0px;
+  }
+  .offerMan .el-select .el-tag__close.el-icon-close {
+    right: -3px;
+  }
+  .box .topChuck .el-form-item.offerMan:nth-child(12) label {
+    text-align: center;
+  }
+  .offerMan .el-select__tags {
+    white-space: nowrap;
+  }
+  /* 搜索框溢出隐藏 */
+  .offerMan .el-input--suffix .el-input__inner {
+    padding-right: 35px;
+  }
+  .offerMan .el-input.is-disabled .el-input__inner {
+    color: #606266;
+  }
+  /* 时间控件样式 */
+  .box .topChuck .el-form--inline .el-form-item:nth-child(9) {
+    width: 38%;
+  }
+  /* .box .topChuck .el-form--inline .el-form-item:nth-child(9) label {
+    width: 17%;
+  } */
+  .box .topChuck .el-form--inline .el-form-item:nth-child(10) {
+    width: 33%;
+  }
+  /* .box .topChuck .el-form--inline .el-form-item:nth-child(10) label {
+    width: 17%;
+  } */
+  .box .topChuck .el-range-editor .el-range-input {
+    background: #f9f9f9;
+  }
+  .box .topChuck .el-input__inner {
+    width: 100%;
+    background: #f9f9f9;
+    border: 1px solid #cecece;
+  }
+  .box .topChuck .el-form--inline .el-form-item__content {
+    width: 66%;
+  }
+  .box .topChuck .el-row .el-col.el-col-22 {
+    border-right: 1px solid #cecece;
+  }
+  .box .topChuck .el-form--inline .el-form-item:nth-child(10),
+  .el-form-item:nth-child(11),
+  .el-form-item:nth-child(12) {
+    margin-bottom: 0;
+  }
+  .box
+    .topChuck
+    .el-form--inline
+    .el-form-item:nth-child(10)
+    .el-form-item__label {
+    width: 26%;
+  }
+  /* 查询 */
+  .box .topChuck .el-button {
+    position: relative;
+    left: 24%;
+    margin-top: 50%;
+  }
+  .box .topChuck .el-input span.pic {
+    /* border-left: 1px solid #cecece; */
+    display: inline-block;
+    height: 24px;
+    width: 32px;
+    margin-top: 24%;
+    padding: 0 20%;
+  }
+  .box .topChuck .el-input span.pic img {
+    display: inline;
+    padding-left: 5px;
+    margin-bottom: 18%;
+    border-left: 1px solid #cecece;
+  }
+  .box .topChuck .el-input span.pic img:hover {
+    cursor: pointer;
+  }
+  /* 冻结按钮 */
+  .el-button--default {
+    border: 1px solid #4a90e2;
+  }
+  .box .el-button--default span {
+    color: #4a90e2;
+  }
+  /* 滑块 */
+  .el-slider__runway {
+    background: #ffffff;
+  }
+  .el-slider__button {
+    width: 14px;
+    height: 24px;
+    /* border: 2px solid #409eff; */
+    background-color: #409eff;
+    border-radius: 0;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+  }
+  .el-slider__button-wrapper {
+    top: -12px;
+  }
+  .el-slider__bar {
+    height: 0;
+    /* background-color: #409EFF; */
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border: 2px dashed #409eff;
+    background-color: #ffffff;
+    position: absolute;
+  }
+  .el-pagination {
+    margin-top: 30px;
+    text-align: center;
+  }
+  .el-pagination .btn-next span {
+    display: inline-block;
+    padding: 0 10px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid #c5c5c5;
+  }
+  .el-pagination .btn-prev span {
+    display: inline-block;
+    padding: 0 10px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid #c5c5c5;
+  }
+  .el-pagination__jump {
+    position: relative;
+    display: inline-block;
+    padding-left: 20px;
+  }
+  /* 物料号进度条 */
+  /* .catetory {
+    border-bottom: 1px solid #cecece;
+    padding-bottom: 2%;
+    margin-bottom: 3%;
+  } */
+  /* .catetory p {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 2%;
+  } */
+  .catetory .el-col div {
+    display: flex;
+    margin-bottom: 2px;
+    font-size: 16px;
+  }
+  .catetory .el-col div span {
+    display: inline-block;
+    text-align: left;
+    margin: 0 2px;
+  }
+  .catetory .el-col div:last-child span:nth-of-type(1) {
+    height: 14px;
+    /* background-color: #05cd00; */
+    border-radius: 4px;
+    margin-bottom: 6px
+  }
+  .catetory .el-col div:last-child span:nth-of-type(2) {
+    height: 14px;
+    /* background-color: #007cff; */
+    border-radius: 4px;
+  }
+  .catetory .el-col div:last-child span:nth-of-type(3) {
+    height: 14px;
+    /* background-color: #ff9e00; */
+    border-radius: 4px;
+  }
+  .showGreen{
+    background-color: #05cd00;
+  }
+  .showBlue{
+    background-color: #007cff;
+  }
+  .showYellow{
+    background-color: #ff9e00;
+  }

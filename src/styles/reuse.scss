@@ -1,0 +1,193 @@
+/*
+ * @Page: 公共组件样式
+ * @Author: cong
+ * @Date: 2018-11-30 11:31:26
+ * @Last Modified by: cong
+ */
+/*表格公共样式*/
+@mixin table-common{
+  width: 98%;
+  margin: auto;
+  /*表头样式*/
+  th {
+    font-size: 14px;
+    color: #4a4a4a;
+    font-weight: 500;
+    font-weight: bold;
+    &.is-leaf{
+      border-bottom:0;
+    }
+  }
+  /* 表头底部横线 */ 
+  .el-table__header {
+    border-bottom: 2px solid #7897a1;
+  }
+  /* 表格底部横线 */
+  &::before {
+    display: none;
+  }
+  thead.is-group th {
+    background: #fff;
+  }
+}
+/*表格样式一 el-table有stripe属性 
+  然后添加 class="table-style1"*/
+.table-style1{
+  @include table-common;
+  text-align: center;
+  .el-table__header {
+    border-bottom: 2px solid #7897a1;
+    border-top: 2px solid #7897a1;
+    tr{
+      th{
+        border-left: 1px solid rgba(120, 151, 161, 0.29);
+        &:first-child{
+          border-left: 0;
+        }
+        .cell{
+          text-align: center;
+        }
+      }
+    }
+  }
+  /* 隔行变色的颜色 */ 
+  .el-table__row--striped td {
+    background:#f4f4f4 !important;
+    padding: 10px 0;
+  }
+  td{
+    border-bottom:0;
+    font-size: 14px;
+  }
+}
+/*表格样式二 class="table-style2"*/
+.table-style2{
+  @include table-common;
+  /* 表格每列 */
+  td{
+    border-bottom: 1px solid rgba(120,151,161,0.332);
+    text-align: center;
+    font-size: 14px;
+  }
+  th{
+    text-align: center;
+  }
+}
+/*表格样式三：多级表头 class="table-style3"*/
+.table-style3{
+  @include table-common;
+  text-align: center;
+  .el-table__header {
+    border-bottom: 2px solid #7897a1;
+    border-top: 2px solid #7897a1;
+    tr{
+      th{
+        &:first-child{
+          border-left: 0;
+        }
+        .cell{
+          text-align: center;
+        }
+      }
+    }
+  }
+  /* 隔行变色的颜色 */ 
+  .el-table__row--striped td {
+    background:#f4f4f4 !important;
+    padding: 10px 0;
+  }
+  td{
+    border-bottom: 0;
+    font-size: 14px;
+    border-right: 0;
+  }
+}
+/* 分页样式 el-pagination有background属性
+   然后添加 class="paging"
+*/
+.paging{
+  &.is-background{
+    button{
+      border: 1px solid #c5c5c5;
+      background-color: #fff !important;
+      color: #333;
+      height: auto;
+      span{
+        font-size: 16px;
+        height: 40px;
+        line-height: 40px;
+        width: 96px;
+      }
+    }
+    .el-pager{
+      li{
+        font-size: 16px;
+        background-color: #fff;
+        border: 1px solid #c5c5c5;
+        line-height: 40px;
+        height: 40px;
+        padding: 0 15px;
+      }
+    }
+    .el-pagination__jump{
+      line-height: 40px;
+      height: 40px;
+      font-size: 16px;
+      font-weight:400;
+      color: #333;
+      input{
+        width:40px;
+        height:40px;
+        border: 1px solid #c5c5c5;
+        font-size: 16px;
+      }
+    }
+  }  
+}
+/*按钮过度颜色的背景色
+  方法一：class="btnbg"
+  方法二：@import 'src/styles/mixin.scss' {@include btnbg;}
+*/
+.btnbg{
+  @include btnbg;
+}
+/* 搜索栏收缩动画 */
+.upper {
+  transform: rotate(180deg);
+  transition: all 0.3s ease;
+}
+/* 搜索栏展开动画 */
+.downer {
+  transform: rotate(360deg);
+  transition: all 0.3s ease;
+}
+/* 冻结滑块样式 class="frozen" */
+.frozen{
+  .el-slider__button{
+    background-color: #409EFF;
+    border-radius:0 0 7px 7px;
+    width: 14px;
+    height: 24px;
+  }
+  .el-slider__bar{
+    height: 0;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border: 2px dashed #409eff ;
+    background-color: #ffffff;
+    position: absolute;
+  }
+  .el-slider__runway{
+    background-color:transparent;
+  }
+}
+/* 树形控件样式  class="treeing"*/
+.treeing{
+  width: 94%;
+  margin: auto;
+  font-size: 14px;
+  .el-tree-node:focus>.el-tree-node__content{
+    color: #fff;
+    background-color: #007CFF;
+  }
+}

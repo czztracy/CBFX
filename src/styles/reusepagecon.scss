@@ -1,0 +1,135 @@
+/*
+ * @Page: 页面内容布局复用样式
+ * @Author: cong
+ * @Date: 2018-11-30 11:35:09
+ * @Last Modified by: cong
+ */
+// 详情页面布局样式
+@import 'src/styles/mixin.scss';
+.reusepage {
+  background: #f4f4f4;
+  padding: 1px;
+  .reusepagecon {
+    background: #f8f7f7;
+    width: 97%;
+    margin: 18px auto;
+    .searchbar {
+      background: #fff;
+      border: 1px solid #d1d1d1;
+      .el-form {
+        margin: 34px 22px;
+        .fomer {
+          width: 91.5%;
+          display: inline-block;
+          border-right: 1px solid #cecece;
+          vertical-align: middle;
+          label{
+            font-weight: 500;
+            font-size: 14px;
+            text-align: right;
+          }
+          input{
+            background-color: #f9f9f9;
+          }
+          .el-date-editor {
+            width: 100%;
+            background-color: #f9f9f9;
+          }
+          .search-input {
+            position: relative;
+            img {
+              position: absolute;
+              right: 1px;
+              top: 50%;
+              transform: translateY(-50%);
+              border-left: 1px solid #cecece;
+              padding-left: 5px;
+            }
+          }
+        }
+        .btn {
+          width: 7%;
+          display: inline-block;
+          vertical-align: middle;
+          text-align: center;
+          .el-form-item__content {
+            margin-left: 0 !important;
+          }
+        }
+      }
+    }
+    .contentlist {
+      // max-height: 750px;
+      & > button {
+        background: #fff;
+        color: #666;
+        width: 3.15%;
+        height: 14px;
+        line-height: 14px;
+        margin: auto;
+        padding: 0;
+        display: block;
+        margin-bottom: 5px;
+        border-radius:0px 0px 5px 5px;
+        border: 1px solid #cecece;
+        border-top: none;
+      }
+      .listcon {
+        background: #fff;
+        border: 1px solid #d1d1d1;
+        @include clearfix;
+        .btngroup{
+          width: 98%;
+          margin:auto;
+          margin-top: 16px;
+          .el-button{
+            border: 1px solid #4a90e2;
+            color: #4a90e2;
+            &:focus{
+              background-color: #fff; 
+            }
+          }
+          .frozen-btn-group,.download-btn-group{
+            display: inline-block;
+            margin-bottom: 15px;
+          }
+          .download-btn-group{
+            margin-left: 25px;
+            &>i{
+              display: inline-block;
+              width: 1px;
+              height: 27px;
+              vertical-align: middle;
+              margin-right: 30px;
+              background: #979797;
+            }
+          }
+        }
+        .el-table {
+          td > .cell,
+          .unallshow {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+          i,
+          a {
+            color: #4a90e2;
+          }
+          .unchoose {
+            cursor: not-allowed;
+            color: #9b9b9b !important;
+            a {
+              cursor: not-allowed;
+              color: #9b9b9b !important;
+            }
+          }
+        }
+        #page{
+          margin:40px auto;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

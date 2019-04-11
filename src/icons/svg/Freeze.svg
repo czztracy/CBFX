@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="39px" viewBox="0 0 120 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>冻结功能</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="小微-需求列表-需要分解的" transform="translate(-359.000000, -448.000000)">
+            <g id="冻结功能" transform="translate(359.000000, 448.000000)">
+                <rect id="Rectangle-5" stroke="#4A90E2" fill="#FFFFFF" x="0.5" y="0.5" width="119" height="37.6875" rx="4"></rect>
+                <g id="Group-5" transform="translate(43.000000, 8.000000)" fill="#4A90E2" font-family="PingFangSC-Regular, PingFang SC" font-size="16" font-weight="normal">
+                    <text id="冻结功能">
+                        <tspan x="0" y="17">冻结功能</tspan>
+                    </text>
+                </g>
+                <g id="dongjie" transform="translate(15.000000, 10.000000)" fill="#1875F0" fill-rule="nonzero">
+                    <path d="M9.50001086,0 C4.25329486,0 0,4.25328997 0,9.5 C0,14.74671 4.25329484,19 9.50001086,19 C14.7467269,19 19,14.7466883 19,9.5 C19,4.25331172 14.7467051,0 9.50001086,0 Z M14,13.1672958 C14,13.6264477 13.6049518,14 13.1192314,14 L5.88076863,14 C5.39511404,14 5,13.6264477 5,13.1672958 L5,8.82658133 C5,8.36738791 5.39511404,7.99381492 5.88076863,7.99381492 L6.58820046,7.99381492 L6.58820046,6.1109332 C6.58820046,4.94698918 7.58985072,4 8.82102255,4 L10.1874238,4 C11.4185518,4 12.420202,4.94698918 12.420202,6.1109332 L12.420202,7.99381492 L13.1192314,7.99381492 C13.6049518,7.99381492 14,8.36736718 14,8.82658133 L14,13.1672958 Z" id="Shape"></path>
+                    <path d="M10.1895917,4.87913571 L8.73427393,4.87913571 C8.02852895,4.87913571 7.47848703,5.50978876 7.47848703,6.13642679 L7.47848703,8 L11.4937604,8 L11.4937604,6.13642679 C11.4937373,5.50978876 10.8953598,4.87913571 10.1895917,4.87913571 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

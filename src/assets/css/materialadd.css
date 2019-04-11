@@ -1,0 +1,173 @@
+/* 下拉框i标签样式 */
+/* .material1 .el-select__caret{
+    height:0;
+    width:0;
+    border:5px solid rgba(0,0,0,0);
+    border-bottom-color:#666;
+    margin-top:19px;
+    margin-right: 10px;
+}
+.material1 .is-reverse{
+    margin-top:12px;
+}
+.material1 .el-select__caret::before{
+    display:none;
+} */
+/* 添加供应商信息样式 */
+.material1 .el-table__expanded-cell{
+    padding: 0!important;
+}
+.material1 .el-table td, .el-table th.is-leaf{
+    border-bottom: 0;
+}
+.material1 .el-table td{
+    /* padding-top: 10px;
+    padding-bottom: 10px; */
+    height: 40px;
+}
+.material1 .el-table::before{
+    display:none;
+}
+.material1 .cell{
+    height: 40px;
+    padding: 0!important;
+    text-align: center;
+    line-height: 40px;
+    color: #4A4A4A;
+    font-size: 16px;
+}
+.material1 .el-table_5_column_40{
+    width: 1.14%!important;
+}
+.material1 .is-leaf{
+    width: 1.14%!important;
+}
+.material1 .el-input{
+    height: 36px;
+}
+.material1 .el-input.is-disabled .el-input__inner{
+    background: #FFF
+}
+.material1 .el-input__inner{
+    height: 39px;
+    line-height: 39px;
+}
+.material1 .el-input__suffix{
+    height: 40px;
+}
+/* 遮罩样式隐藏 */
+.material1 .el-dialog__body{
+    padding:0;
+}
+.material1 .el-dialog__header{
+    display:none;
+}
+/* 多选下拉样式 */
+/* .material1 .el-select-dropdown.is-multiple .el-select-dropdown__item.selected::after{
+    display: none;
+} */
+/* .material1 .el-checkbox__input.is-checked .el-checkbox__inner, .el-checkbox__input.is-indeterminate .el-checkbox__inner{
+    background:linear-gradient(360deg,rgba(41,179,17,1) 0%,rgba(87,216,65,1) 100%);
+    border-color: #27AA11;
+}
+.material1 .el-checkbox__inner:hover{
+    border-color: #27AA11;
+} */
+/* .material1 .el-checkbox__inner{
+    width:16px;
+    height:16px;
+    box-shadow:0px 1px 2px 0px rgba(0,0,0,0.05);
+    border-radius:4px;
+}
+.material1 .el-checkbox__inner::after{
+    top: 2px;
+    left: 5px;
+}
+.material1 .el-checkbox__label{
+    font-size: 16px;    
+}
+.material1 .el-checkbox__input.is-checked+.el-checkbox__label{
+    color: #4A4A4A;
+}
+.material1 .el-checkbox{
+    margin-left: 0 !important;
+} */
+/* 添加物料表格样式三角形 */
+.material1 .el-table__expand-icon .el-icon-arrow-right::before{
+    display: none;
+}
+.material1 .el-table__expand-icon::before{
+    content:url(../index/images/unfold.png);
+}
+.material1 .el-table__expand-icon {
+    padding-top: 5px;
+}
+/* 表格序号前图标旋转 */
+.material1 .el-table__expand-icon--expanded{
+    transform-origin: bottom;
+}
+.material1 .el-table__expand-icon{
+    transform-origin: bottom;
+}
+/* *样式 */
+.material1 table th.must div:before {
+    content: '*';
+    color: #ff1818;
+    position: relative;
+    top: 5px;
+    left: -5px;
+
+}
+/* 表格表头底部样式 */
+.material1 .el-table__header-wrapper{
+    border-bottom: 2px solid #7897a1;
+}
+/* 文件上传样式 */
+.material1 .el-upload{
+    margin-left: 1.35%;
+    min-width: 7.69%;
+}
+.material1 .el-upload-list{
+    position: relative;
+    z-index: 99;
+    background:#FFF;
+}
+/* .material1 .el-table__header colgroup col:first-child,.material1 .el-table__body colgroup col:first-child{
+    width: 1.17%;
+} 
+.material1 .el-table__header colgroup col:nth-child(2),.material1 .el-table__body colgroup col:nth-child(2){
+    width: 7.6%;
+}
+.material1 .el-table__header colgroup col:nth-child(3),.material1 .el-table__body colgroup col:nth-child(3){
+    width: 8.01%;
+}
+.material1 .el-table__header colgroup col:nth-child(4),.material1 .el-table__body colgroup col:nth-child(4){
+    width: 7.6%;
+}
+.material1 .el-table__header colgroup col:nth-child(5),.material1 .el-table__body colgroup col:nth-child(5){
+    width: 14.92%;
+}
+.material1 .el-table__header colgroup col:nth-child(6),.material1 .el-table__body colgroup col:nth-child(6){
+    width: 6.08%;
+}
+.material1 .el-table__header colgroup col:nth-child(7),.material1 .el-table__body colgroup col:nth-child(7){
+    width: 5.39%;
+}
+.material1 .el-table__header colgroup col:nth-child(8),.material1 .el-table__body colgroup col:nth-child(8){
+    width: 6.28%;
+}
+.material1 .el-table__header colgroup col:nth-child(9),.material1 .el-table__body colgroup col:nth-child(9){
+    width: 6.9%;
+}
+.material1 .el-table__header colgroup col:nth-child(10),.material1 .el-table__body colgroup col:nth-child(10){
+    width: 6.9%;
+}
+.material1 .el-table__header colgroup col:nth-child(11),.material1 .el-table__body colgroup col:nth-child(11){
+    width: 6.9%;
+}
+.material1 .el-table__header colgroup col:nth-child(12),.material1 .el-table__body colgroup col:nth-child(12){
+    width: 6.9%;
+}
+.material1 .el-table__header colgroup col:nth-child(13),.material1 .el-table__body colgroup col:nth-child(13){
+    width: 1.1%;
+} */
